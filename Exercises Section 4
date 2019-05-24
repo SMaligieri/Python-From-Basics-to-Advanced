@@ -47,6 +47,115 @@ k = float(input(" v em km/h: "))
 m = k / 3.6
 print("v em m/s: ", m)
 
+# Exercício 11
+m = float(input("v em m/s: "))
+k = m * 3.6
+print("v em km/h: ", k)
+
+# Exercício 12
+m = float(input("d em milhas: "))
+k = 1.61 * m
+print("d em km: ", k)
+
+# Exercício 13
+k = float(input("d em km: "))
+m = k / 1.61
+print("d em milhas: ", m)
+
+# Exercício 14
+g = float(input("Ângulo em graus: "))
+from math import pi
+r = g * pi/180
+print("Ângulo em radianos: ", r)
+
+# Exercício 15
+from math import pi
+r = float(input("Ângulo em radianos: "))
+g = r * 180/pi
+print("Ângulo em graus: ", g)
+
+# Exercício 16
+p = float(input("em polegadas: "))
+c = p * 2.54
+print("em cm: ", c)
+
+# Exercício 17
+c = float(input("em cm: " ))
+p = c/2.54
+print("em polegadas: ", p)
+
+# Exercício 18
+m = float(input("em m3: "))
+l = 1000 * m
+print("em L: ", l)
+
+# Exercício 19
+l = float(input("em L: "))
+m = l / 1000
+print("em m3: ", m)
+
+# Exercício 20
+k = float(input("em kg: "))
+lbs = k/0.45
+print("em lbs: ", lbs)
+
+# Exercício 21
+lbs = float(input("em lbs: "))
+k = lbs * 0.45
+print("em kg: ", k)
+
+# Exercício 22
+j = float(input("em jardas: "))
+m = 0.91 * j
+print("em m: ", m)
+
+# Exercício 23
+m = float(input("em m: "))
+j = m / 0.91
+print("em jardas: ", j)
+
+# Exercício 24
+m = float(input("em m2: "))
+a = m * 0.000247
+print("em acres: ", a)
+
+# Exercício 25
+a = float(input("em acres: "))
+m = a / 0.000247
+print("em m2: ", m)
+
+# Exercício 26
+m = float(input("em m2: "))
+h = m * 0.0001
+print("em hectares: ", h)
+
+# Exercício 27
+h = float(input("em h: "))
+m = h / 0.0001
+print("em m2: ", m)
+
+# Exercício 28
+a = float(input("n1: "))
+b = float(input("n2: "))
+c = float(input("n3: "))
+
+print(a**2 + b**2 + c**2)
+
+# Exercício 29
+nota1 = float(input("nota 1: "))
+nota2 = float(input("nota 2: "))
+nota3 = float(input("nota 3: "))
+nota4 = float(input("nota 4: "))
+
+print("Média: ", (nota1 + nota2 + nota3 + nota4)/4)
+
+# Exercício 30
+brl = float(input("Valor em real: "))
+dol = brl / 4
+print("Valor em dólar: ", dol)
+
+
+
 
 
 
