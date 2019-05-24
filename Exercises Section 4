@@ -22,6 +22,33 @@ print("Quadrado do número: ", num**2)
 num = float(input("Número: "))
 print(num/5)
 
+# Exercício 6
+c = float(input("Temperatura em Celsius: "))
+F = c * (9/5) + 32
+print("Temperatura em Fahrenheit: ", F)
+
+# Exercício 7
+f = float(input("Temperatura em Fahrenheit: "))
+c = 5 * (f - 32)/9
+print("Temperatura em Celsius: ", c)
+
+# Exercício 8
+k = float(input("Temperatura em Kelvin: "))
+c = k - 273.15
+print("Temperatura em Celsius: ", c)
+
+# Exercício 9
+c = float(input("Temperatura em Celsius: "))
+k = c + 273.15
+print("Temperatura em Kelvin: ", k)
+
+# Exercício 10
+k = float(input(" v em km/h: "))
+m = k / 3.6
+print("v em m/s: ", m)
+
+
+
 
 
 
