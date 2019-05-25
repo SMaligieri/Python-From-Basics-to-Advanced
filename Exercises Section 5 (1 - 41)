@@ -1,0 +1,93 @@
+# Exercício 1
+x = int(input("x: "))
+y = int(input("y: "))
+
+if x > y:
+    print("x é maior que y")
+if y > x:
+    print("y é maior que x")
+
+# Exercício 2
+n = int(input("Digite um número: "))
+from math import sqrt
+if n > 0:
+    print(sqrt(n))
+else:
+    print("Número inválido")
+
+# Exercício 3
+num = float(input("Digite um número: "))
+from math import sqrt
+if num > 0:
+    print(sqrt(num))
+else:
+    print(num**2)
+
+# Exercício 4
+n = float(input("Digite um número: "))
+from math import sqrt
+if n > 0:
+    print(n**2)
+    print(sqrt(n))
+else:
+    print("Número inválido")
+
+# Exercício 5
+n = int(input("Digite um número: "))
+if n % 2 == 0:
+    print("Número par")
+else:
+    print("Número ímpar")
+
+# Exercício 6
+x = int(input("Digite o valor de x: "))
+y = int(input("Digite o valor de y: "))
+if x > y:
+    print("X é maior que Y")
+    print("A diferença entre eles é", x - y)
+if y > x:
+    print("Y é maior que X")
+    print("A diferença entre eles é", y - x)
+
+# Exercício 7
+x = int(input("Digite x: "))
+y = int(input("Digite y: "))
+if x > y:
+    print ("X é maior que Y")
+elif y > x:
+    print("Y é maior que X")
+else:
+    print("Números iguais")
+
+# Exercício 8
+nota1 = int(input("Digite a nota 1: "))
+nota2 = int(input("Digite a nota 2: "))
+if nota1 >= 0 and nota1 <= 10 and nota2 >= 0 and nota2 <= 10:
+    print("Média: ", (nota1 + nota2) / 2)
+else:
+    print("Nota inválida")
+
+# Exercício 9
+sal = int(input("Salário: "))
+parc = int(input("Valor da parcela: "))
+if parc > 0.2*sal:
+    print("Empréstimo Negado")
+else:
+    print("Empréstimo Concedido")
+
+# Exercício 10
+altura = float(input("Altura: "))
+sexo = input("Sexo: ")
+if sexo == "masculino":
+    print("Peso Ideal: ", (72.7 * altura) - 58)
+elif sexo == "feminino":
+    print("Peso Ideal: ", (62.1 * altura) - 44.7)
+else:
+    print("ERRO - Especifique o sexo!")
+
+# Exercício 11
+
+
+
+
+
