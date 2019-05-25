@@ -154,10 +154,189 @@ brl = float(input("Valor em real: "))
 dol = brl / 4
 print("Valor em dólar: ", dol)
 
+# Exercício 31
+num = int(input("Número: "))
+print("Antecessor: ", num - 1)
+print("Sucessor: ", num + 1)
+
+# Exercício 32
+num = int(input("Número: "))
+print((3 * num + 1) + (2 * num - 1))
+
+# Exercício 33
+lado = float(input("Medida do lado: "))
+area = lado ** 2
+print("Área: ", area)
+
+# Exercício 34
+from math import pi
+raio = float(input("Valor do raio: "))
+area = pi * raio ** 2
+print("Área do círculo: ", area)
+
+# Exercício 35
+from math import sqrt
+a = float(input("Cateto 1: "))
+b = float(input("Cateto 2: "))
+h = sqrt(a**2 + b**2)
+print("Hipotenusa: ", h)
+
+# Exercício 36
+from math import pi
+alt = float(input("Altura: "))
+raio = float(input("Raio: "))
+v = pi * raio**2 * alt
+print("Volume do cilindro: ", v)
+
+# Exercício 37
+valor = float(input("Valor do produto: "))
+valdesc = valor * 0.88
+print("Valor com desconto: ", valdesc)
+
+# Exercício 38
+sal = float(input("Salário antigo: "))
+novosal = sal * 1.25
+print("Salário com aumento: ", novosal)
+
+# Exercício 39
+premio = 780_000
+prem1 = premio * 0.46
+prem2 = premio * 0.32
+prem3 = premio - (prem1 + prem2)
+
+print("Primeiro prêmio: ", prem1)
+print("Segundo prêmio: ", prem2)
+print("Terceiro prêmio: ", prem3)
+
+# Exercício 40
+dias = int(input("Dias trabalhados: "))
+valor_bruto = dias * 30
+valor_liq = valor_bruto * 0.92
+print("Valor líquido: ", valor_liq)
+
+# Exercício 41
+valordahora = float(input("Valor da hora de trabalho: "))
+horasnomes = int(input("Horas trabalhadas no mês: "))
+valorpago = valordahora * horasnomes * 1.1
+print("Valor pago: ", valorpago)
+
+# Exercício 42
+sb = float(input("Salário base: "))
+sal = sb + sb*0.05 - sb*0.07
+print("Salário a receber: ", sal)
+
+# Exercício 43
+vt = float(input("Valor Total: "))
+cdesc = vt * 0.90
+print("Valor com 10% de desconto: ", cdesc)
+
+parc = vt / 3
+print("Valor da parcela para 3 vezes: ", parc)
+
+comvv = 0.05 * cdesc
+print("Comissão p/ venda à vista: ", comvv)
+
+comvp = 0.05 * vt
+print("Comissão p/ venda parcelada: ", comvp)
+
+# Exercício 44
+altdegrau = float(input("Altura do degrau: "))
+alttot = float(input("Altura total: "))
+numdeg = alttot / altdegrau
+print("Número de degraus: ", numdeg)
+
+# Exercício 45
+M = input("Letra maiúscula: ")
+m = M.lower()
+print(M, "em minúsculo é", m)
+
+# Exercício 46
+num =(input("Número: "))
+print(num[::-1])
+
+# Exercício 47
+num = input("Número: ")
+print(num[0])
+print(num[1])
+print(num[2])
+print(num[3])
+
+# Exercício 48
+seg = int(input("Digite o valor em segundos: "))
+horas = int(seg / 3600)
+minutos = int(int(seg % 3600) / 60)
+segundos = int(seg % 3600) % 60
+print("hora(s):", horas, ";", "minutos:", minutos, "segundos:", segundos)
+
+# Exercício 49
+horarioinicio_hora = int(input("Digite a hora de início: "))
+horarioinicio_minutos = int(input("Digite os minutos: "))
+horarioinicio_segundos = int(input("Digite os segundos: "))
+print("Horátio de início: ", horarioinicio_hora, "hora", horarioinicio_minutos, "minutos", horarioinicio_segundos, "segundos")
 
 
+seg = int(input("Digite a duração da experiência em segundos: "))
+horas = int(seg / 3600)
+minutos = int(int(seg % 3600) / 60)
+segundos = int(seg % 3600) % 60
 
 
+print("Duração: ", "hora(s):", horas, ";", "minutos:", minutos, "segundos:", segundos)
+
+hsf = horarioinicio_segundos + segundos
+hmf = horarioinicio_minutos + minutos
+hhf = horarioinicio_hora + horas
+
+if hsf >= 60:
+        hsf = hsf - 60
+        hmf = hmf + 1
+elif hmf >= 60:
+        hmf = hmf - 60
+        hhf = hhf + 1
+else:
+    pass
+
+
+print("Término: ", hhf, "horas", hmf, "minutos", hsf, "segundos")
+
+# Exercício 50
+aa = int(input("Digite o ano atual: "))
+i = int(input("Digite sua idade: "))
+
+print("Ano de nascimento: ", aa - i)
+
+# Exercício 51
+x1 = 0.0
+y1 = 0.0
+ 
+x2 = float(input('Informe a coordenada X: '))
+y2 = float(input('Informe a coordenada y: '))
+ 
+r = (((x1 - x2) ** 2) + ((y1 - y2) ** 2)) ** 0.5
+ 
+print(f'A distância é {r}')
+
+# Exercício 52
+aposta1 = int(input("Insira o valor da aposta 1: "))
+aposta2 = int(input("Insira o valor da aposta 2: "))
+aposta3 = int(input("Insira o valor da aposta 3: "))
+premio = int(input("Insira o valor do prêmio: "))
+premio1 = aposta1 / (aposta1 + aposta2 + aposta3)*premio
+premio2 = aposta2 / (aposta1 + aposta2 + aposta3)*premio
+premio3 = aposta3 / (aposta1 + aposta2 + aposta3)*premio
+
+print("O jogador 1 recebe: ", premio1)
+print("O jogador 2 recebe: ", premio2)
+print("O jogador 3 recebe: ", premio3)
+
+# Exercício 53
+c = float(input("Coloque o comprimento do terreno(em metros): "))
+l = float(input("Coloque a largura do terreno (em metros): "))
+per = c + c + l + l
+print("Você vai precisar de", per, "metros de tela")
+
+p = float(input("Coloque o preço do metro de tela: "))
+print("Isso vai custar", p * per, "reais")
 
 
 
