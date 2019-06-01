@@ -450,5 +450,65 @@ while sair == False:
         print("Média Aritmética: ", float((x + y + z)/3))
         
 # Exercício 29
-
+sair = False
+while sair == False:
+    from random import randint
+    a = randint(0,100)
+    print("a: ", a)
+    b = randint(0,100)
+    print("b: ", b)
+    resp = int(input("Quanto é a + b? " ))
+    if resp == a + b:
+        print("RESPOSTA CERTA!")
+    else:
+        print("RESPOSTA ERRADA!")
        
+# Exercício 30
+sair = False
+while sair == False:
+    a = int(input("Digite um número: "))
+    b = int(input("Digite um número: "))
+    c = int(input("Digite um número: "))
+
+    if a > b > c:
+        print(c, b, a)
+    elif a > c > b:
+        print(b, c, a)
+    elif b > a > c:
+        print(c, a, b)
+    elif b > c > a:
+        print(a, c, b)
+    elif c > a > b:
+        print(b, a, c)
+    elif c > b > a:
+        print(a, b, c)
+
+# Exercício 31
+sair = False
+while sair == False:
+    h = float(input("Digite sua altura (m): "))
+    p = float(input("Digite seu peso(kg): "))
+
+    if h < 1.2:
+        if p <= 60:
+            print("A")
+        elif 60 < p <= 90:
+            print("D")
+        elif p > 90:
+            print("G")
+    if 1.2 <= h <= 1.7:
+        if p <= 60:
+            print("B")
+        elif 60 < p <= 90:
+            print("E")
+        elif p > 90:
+            print("H")
+    if h > 1.7:
+        if p <= 60:
+            print("C")
+        elif 60 < p <= 90:
+            print("F")
+        elif p > 90:
+            print("I")
+
+# Exercício 32
