@@ -344,3 +344,111 @@ while sair == False:
         print("Não é bissexto.")
         
 # Exercício 24
+sair = False
+while sair == False:
+    valor = float(input("Insira o valor do produto: "))
+    print('''Você deseja enviar o produto para:
+[1]MG
+[2]SP
+[3]RJ
+[4]MS''')
+    dest = int(input("Insira o destino: "))
+    if dest == 1:
+        print("Destino: MG")
+        print("Imposto: 7%")
+        valor = valor*1.07
+        print("Valor total: ", valor)
+    elif dest == 2:
+        print("Destino: SP")
+        print("Imposto: 12%")
+        valor = valor*1.12
+        print("Valor total: ", valor)
+    elif dest == 3:
+        print("Destino: RJ")
+        print("Imposto: 15%")
+        valor = valor*1.15
+        print("Valor total: ", valor)
+    elif dest == 4:
+        print("Destino: MS")
+        print("Imposto: 8%")
+        valor = valor*1.08
+        print("Valor total: ", valor)
+    else:
+        print("Insira um Estado válido")
+        
+# Exercício 25
+sair = False
+while sair == False:
+    a = float(input("Digite o valor de a: "))
+    b = float(input("Digite o valor de b: "))
+    c = float(input("Digite o valor de c: "))
+    from math import sqrt
+    delta = b**2 - 4*a*c
+    print("Delta: ",delta)
+    if delta < 0:
+        print("Não existem raízes reais")
+    elif delta == 0:
+        print("Existe uma raiz real")
+    else:
+        x1 = (-b + sqrt(delta))/2*a
+        x2 = (-b - sqrt(delta))/2*a
+        print("X1: ", x1)
+        print("X2: ", x2)
+
+# Exercício 26
+sair = False
+while sair == False:
+    dist = float(input("Insira a distância percorrida (Km): "))
+    c = float(input("Insira o consumo de combustível (l): "))
+    cons = dist/c
+    print("Consumo: ", cons, "Km/l"
+          )
+    if cons < 8:
+        print("Venda o carro!")
+    elif 8 <= cons < 14:
+        print("Econômico")
+    elif cons > 14:
+        print("Super econômico")
+    else:
+        print("Erro")
+        
+# Exercício 27
+sair = False
+while sair == False:
+    idade = int(input("Insira a idade: "))
+    if 5 <= idade <= 7:
+        print("Infantil A")
+    elif 8 <= idade <= 10:
+        print("Infantil B")
+    elif 11 <= idade <= 13:
+        print("Juvenil A")
+    elif 14 <= idade <= 17:
+        print("Juvenil B")
+    elif idade > 18:
+        print("Sênior")
+        
+# Exercício 28
+sair = False
+while sair == False:
+    x = int(input("Insira o primeiro número: "))
+    y = int(input("Insira o segundo número: "))
+    z = int(input("Insira o terceiro número: "))
+
+    print('''Opções:
+[1] Média Geométrica
+[2] Média Ponderada
+[3] Média Harmônica
+[4] Média Aritmética''')
+    op = int(input("Selecione uma opção: "))
+    if op == 1:
+        print("Média Geométrica: ", float((x * y * z)**(1/3)))
+    elif op == 2:
+        print("Média Ponderada: ", float((x + 2*y + 3*z)/6))
+    elif op == 3:
+        print("Média Harmônica: ",float( 1/(1/x)+(1/y)+(1/z)))
+    elif op == 4:
+        print("Média Aritmética: ", float((x + y + z)/3))
+        
+# Exercício 29
+
+       
