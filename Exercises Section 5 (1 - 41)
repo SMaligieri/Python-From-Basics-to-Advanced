@@ -512,3 +512,98 @@ while sair == False:
             print("I")
 
 # Exercício 32
+sair = False
+while sair ==  False:
+    cod = int(input("Digite o código do produto: "))
+    qtde = int(input("Digite a quantidade desejada: "))
+    if cod == 100:
+        print("Hot Dog")
+        print("Valor: ", qtde*1.2)
+    elif cod == 101:
+        print("Bauru")
+        print("Valor: ", qtde*1.3)
+    elif cod == 102:
+        print("Bauru com ovo")
+        print("Valor: ", qtde*1.5)
+    elif cod == 103:
+        print("Hambúrguer")
+        print("Valor: ", qtde*1.2)
+    elif cod == 104:
+        print("Cheeseburger")
+        print("Valor: ", qtde*1.7)
+    elif cod == 105:
+        print("Suco")
+        print("Valor: ", qtde*2.2)
+    elif cod == 106:
+        print("Refrigerante")
+        print("Valor: ", qtde*1)
+        
+
+# Exercício 33
+sair = False
+while sair ==  False:
+    pa = int(input("Preço Antigo: "))
+    if pa <= 50:
+        pn = pa*1.05
+        print("Preço Novo: ", pn)
+        if pn <= 80:
+            print("Barato")
+        elif 80 < pn <= 120:
+            print("Normal")
+        elif 120 < pn <= 200:
+            print("Caro")
+        elif pn > 200:
+            print("Muito caro")
+    if 50 < pa <= 100:
+        pn = pa*1.1
+        print("Preço Novo: ", pn)
+        if pn <= 80:
+            print("Barato")
+        elif 80 < pn <= 120:
+            print("Normal")
+        elif 120 < pn <= 200:
+            print("Caro")
+        elif pn > 200:
+            print("Muito caro")
+    if pa > 100:
+        pn = pa*1.15
+        print("Preço Novo: ", pn)
+        if pn <= 80:
+            print("Barato")
+        elif 80 < pn <= 120:
+            print("Normal")
+        elif 120 < pn <= 200:
+            print("Caro")
+        elif pn > 200:
+            print("Muito caro")
+            
+# Exercício 34
+sair = False
+while sair ==  False:
+    nota = float(input(' Digite a nota: '))
+    flt = int(input('Digite o número de faltas: '))
+    if 9 <= nota <=10:
+        if flt <= 20:
+            print("A")
+        else:
+            print("B")
+    if 7.5 <= nota <= 8.9:
+        if flt <= 20:
+            print("B")
+        else:
+            print("C")
+    if 5 <= nota <= 7.4:
+        if flt <= 20:
+            print("C")
+        else:
+            print("D")
+    if 4 <= nota <= 4.9:
+        if flt <= 20:
+            print("D")
+        else:
+            print("E")
+    if nota <= 3.9:
+        print("E")
+
+# Exercício 35
+
