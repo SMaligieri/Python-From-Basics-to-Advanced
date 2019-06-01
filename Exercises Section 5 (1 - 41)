@@ -86,8 +86,261 @@ else:
     print("ERRO - Especifique o sexo!")
 
 # Exercício 11
+numero = input("Digite um número: ")
+if int(numero) < 0:
+    print("Número inválido")
+else:
+    print(sum([int(n) for n in numero]))
+    
+# Exercício 12
+from math import log
+numero = int(input("Digite um número: "))
+if numero < 0:
+    print("Número Inválido")
+else:
+    print("Logaritmo do número: ", log(numero))
+
+# Exercício 13
+sair = False
+while sair == False:
+
+    nota1 = float(input("Digite a nota da P1: "))
+    nota2 = float(input("Digite a nota da P2: "))
+    nota3 = float(input("Digite a nota da P3: "))
+    media = (nota1 + nota2 + 2*nota3)/4
+
+    print("Média: ", media)
+
+    if media >= 6:
+        print("Resultado: Aprovado")
+    else:
+        print("Resultado: Reprovado")
+
+    fim = input("Deseja sair? (s/n): ")
+    if fim == "s":
+        sair = True
+
+# Exercício 14
+sair = False
+while sair == False:
+
+    notalab = float(input("Digite a nota do trabalho: "))
+    notasem = float(input("Digite a nota da prova semestral: "))
+    notaex = float(input("Digite a nota do exame final: "))
+    media = (notalab*2 + notasem*3 + notaex*5)/10
+
+    print("Média: ", media)
+
+    if media >= 0 and media < 3:
+        print("REPROVADO")
+    elif media >= 3 and media < 6:
+        print("RECUPERAÇÂO")
+    elif media >= 6 and media <= 10:
+        print("APROVADO")
+    else:
+        print("ERRO")
+
+    fim = input("Deseja sair? (s/n): ")
+    if fim == "s":
+        sair = True
+
+# Exercício 15
+sair = False
+while sair == False:
+
+    dia = int(input("Digite um número de 1 a 7: "))
+    if dia == 1:
+        print("Domingo")
+    elif dia == 2:
+        print("Segunda")
+    elif dia == 3:
+        print("Terça")
+    elif dia == 4:
+        print("Quarta")
+    elif dia == 5:
+        print("Quinta")
+    elif dia == 6:
+        print("Sexta")
+    elif dia == 7:
+        print("Sábado")
+    else:
+        print("Inválido")
+
+    fim = input("Acabou? (sim/nao) ")
+    if fim == "sim":
+        sair = True
+
+# Exercício 16
+sair = False
+while sair == False:
+    num = int(input("Digite um número de 1 a 12: "))
+    if num == 1:
+        print("Janeiro")
+    elif num == 2:
+        print("Fevereiro")
+    elif num == 3:
+        print("Março")
+    elif num == 4:
+        print("Abril")
+    elif num == 5:
+        print("Maio")
+    elif num == 6:
+        print("Junho")
+    elif num == 7:
+        print("Julho")
+    elif num == 8:
+        print("Agosto")
+    elif num == 9:
+        print("Setembro")
+    elif num == 10:
+        print("Outubro")
+    elif num == 11:
+        print("Novembro")
+    elif num == 12:
+        print("Dezembro")
+    else:
+        print ("Inválido")
+
+    fim = input("Continuar? (s/n): ")
+    if fim == "n":
+        sair = True
+
+# Exercício 17
+sair = False
+while sair == False:
 
 
+    basemaior = float(input("Digite o valor da base maior (em cm): "))
+    basemenor = float(input("Digite o valor da base menor (em cm): "))
+    altura = float(input("Digite o valor da altura (em cm): "))
+    area = (basemaior + basemenor)*altura/2
+    if basemaior < 0 or basemenor < 0 or altura < 0:
+        print ("ERRO - VALORES INVÁLIDOS")
+    else:
+        print("Área do trapézio: ", area, "centímetros quadrados")
 
+    fim = input("Deseja realizar outro cálculo? (s/n) ")
+    if fim == "n":
+        sair = True
+    
 
+# Exercício 18
+sair = False
+while sair == False:
+    print('''Suas opções:
+        [1]SOMA
+        [2]SUBTRAÇÃO
+        [3]MULTIPLICAÇÃO
+        [4]DIVISÃO
+        [5]EXPONENCIAÇÃO''')
+    
+    op = int(input("Escolha uma operação básica: "))
+    print("Operação escolhida: ", op)
 
+    a = float(input("Digite o primeiro número: "))
+    b = float(input("Digite o segundo número: "))
+
+    if op == 1:
+        print("Escolhido: SOMA")
+        print(a + b)
+    elif op == 2:
+        print("Escolhido: SUBTRAÇÃO")
+        print(a - b)
+    elif op == 3:
+        print("Escolhido: MULTIPLICAÇÂO")
+        print(a*b)
+    elif op == 4:
+        print("Escolhido: DIVISÃO")
+        print(a/b)
+    elif op == 5:
+        print("Escolhido: EXPONENCIAÇÃO")
+        print(a**b)
+    else:
+        
+        print("INVÁLIDO")
+
+    fim = input("Deseja tentar outra vez? (s/n): ")
+    if fim == "n":
+        sair = True
+
+# Exercício 19
+sair = False
+while sair == False:
+
+    num = int(input("Digite um valor: "))
+    if num % 3 != 0 and num % 5 != 0:
+        print("Não é divisível por 3 ou 5")
+    if num % 3 == 0 and num % 5 != 0:
+        print("É divisível por 3, mas não por 5")
+    if num % 3 != 0 and num % 5 == 0:
+        print("É divisível por 5, mas não por 3")
+    if num % 3 == 0 and num % 5 == 0:
+        print("É divisível por 3 e 5")
+    fim = input("Deseja tentar outro número? (s/n)  ")
+    if fim == "n":
+        sair = True
+
+# Exercício 20
+sair = False
+while sair == False:
+    a = float(input("Digite o valor do primeiro lado: "))
+    b = float(input("Digite o valor do segundo lado: "))
+    c = float(input("Digite o valor do terceiro lado: "))
+
+    if a < b + c and b < a + c and c < a + b:
+        print("É um triângulo")
+        if a == b == c:
+            print("Equilátero")
+        elif a == b and a != c or a == c and a != b or b == a and b != c or b != a and b == c or c == a and c != b or c == b and c != a:
+            print("Isósceles")
+        elif a != b != c:
+            print("Escaleno")
+            
+            
+# Exercício 21
+print('''Opções de operação:
+    [1]Soma de dois números
+    [2]Subtração (maior pelo menor)
+    [3]Produto de dois números
+    [4]Divisão de dois números(denominador não pode ser 0)''')
+
+sair = False
+while sair == False:
+
+    op = int(input("Escolha a opção: "))
+    a = float(input("Escolha o primeiro número: "))
+    b = float(input("Escolha o segundo número: "))
+    if op == 1:
+        print(a + b)
+    if op == 2:
+        if a > b:
+            print(a - b)
+        if b > a:
+            print(b - a)
+    if op == 3:
+        print(a*b)
+    if op == 4:
+        print(a/b)
+      
+# Exercício 22
+sair = False
+while sair == False:
+
+    i = int(input("Digite a idade: "))
+    c = int(input("Tempo de contribuição: "))
+    if i >= 65 or c >= 30 or i >=60 and c >= 25:
+        print("Pode se aposentar")
+    else:
+        print("Não pode se aposentar")
+        
+# Exercício 23
+sair = False
+while sair == False:
+
+   ano = int(input("Digite o ano: "))
+   if ano % 400 == 0 or ano % 4 == 0 and ano % 100 != 0:
+       print("É um ano bissexto.")
+   else:
+        print("Não é bissexto.")
+        
+# Exercício 24
