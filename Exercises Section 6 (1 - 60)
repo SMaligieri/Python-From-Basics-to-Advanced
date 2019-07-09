@@ -24,3 +24,30 @@ while i <= 100000:
     i = i + 1000
 
 # Exercício 5   
+soma = 0
+for n in range(1,11):
+    soma += int(input(f'Informe o valor {n}/10: '))
+print("A soma é: ", soma)
+
+# Exercício 6
+soma = 0
+for n in range(1,11):
+    soma = soma + int(input(f'Digite o número {n} de 10: '))
+   
+média = soma/n
+print("A média é: ", média)
+
+# Exercício 7
+i = 0
+for n in range (1, 11):
+    k = int(input(f'Digite o número {n} de 10: '))
+    if k < 0:
+        print("Valor inválido")
+        media = "ERRO!"
+        break
+    
+    if k >= 0:
+        i = i + k
+        media = i/n
+
+print("Média: ", media)
